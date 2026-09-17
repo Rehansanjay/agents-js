@@ -1,5 +1,23 @@
 # @livekit/agents-plugin-rime
 
+## 1.9.1
+
+### Patch Changes
+
+- Add Rime WebSocket v1 streaming with binary and JSON support through the published - [#2450](https://github.com/livekit/agents-js/pull/2450) ([@naszzz](https://github.com/naszzz))
+  protocol package. Support sentence input, cancellation, connection reuse, and all
+  six audio formats. Keep HTTP and WS3 support, use consistent sample rates, and
+  remove provider and transport details from errors.
+
+  Handle terminal Rime HTTP TTS errors through the existing error event without leaving
+  an unhandled background rejection.
+  Keep Rime stream metrics tied to their fixed options. Handle tokenizer failures
+  while input remains open.
+  Retry Rime v1 requests that complete without audio for nonempty input.
+
+- Updated dependencies [[`b7ad990`](https://github.com/livekit/agents-js/commit/b7ad990c5faa424b31697bd2e868232f81f2bdf5), [`b7ad990`](https://github.com/livekit/agents-js/commit/b7ad990c5faa424b31697bd2e868232f81f2bdf5)]:
+  - @livekit/agents@1.9.1
+
 ## 1.9.0
 
 ### Patch Changes

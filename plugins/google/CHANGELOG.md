@@ -1,5 +1,16 @@
 # @livekit/agents-plugin-google
 
+## 1.9.1
+
+### Patch Changes
+
+- Stamp `type: 'realtime_model_error'` on the Gemini Live error event so `AgentSession` forwards it as `AgentSessionEventTypes.Error` instead of dropping it; the OpenAI realtime plugins already do. - [#2509](https://github.com/livekit/agents-js/pull/2509) ([@anzemur](https://github.com/anzemur))
+
+- Preserve free-form object fields in Gemini text API function tool schemas. - [#2516](https://github.com/livekit/agents-js/pull/2516) ([@rosetta-livekit-bot](https://github.com/apps/rosetta-livekit-bot))
+
+- Updated dependencies [[`b7ad990`](https://github.com/livekit/agents-js/commit/b7ad990c5faa424b31697bd2e868232f81f2bdf5), [`b7ad990`](https://github.com/livekit/agents-js/commit/b7ad990c5faa424b31697bd2e868232f81f2bdf5)]:
+  - @livekit/agents@1.9.1
+
 ## 1.9.0
 
 ### Patch Changes

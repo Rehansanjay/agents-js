@@ -1,5 +1,13 @@
 # @livekit/agents
 
+## 1.9.1
+
+### Patch Changes
+
+- Reset the STT retry budget once a connection attempt outlived the connect timeout, so an idle socket recycled by the provider (Cartesia's `1001 Idle timeout` every ~3 minutes on a silent caller) no longer exhausts `maxRetry` and ends the session. - [#2494](https://github.com/livekit/agents-js/pull/2494) ([@u9g](https://github.com/u9g))
+
+- Recover the STT stream after an unrecoverable error instead of closing the session on the first one: `AgentSession` now applies `maxUnrecoverableErrors` to `stt_error` (reset by a user transcript) like it does for LLM and TTS, and the STT pipeline recreates its stream after a connection failure. Matches livekit/agents#6418. - [#2494](https://github.com/livekit/agents-js/pull/2494) ([@u9g](https://github.com/u9g))
+
 ## 1.9.0
 
 ### Minor Changes

@@ -1,5 +1,14 @@
 # @livekit/agents-plugin-elevenlabs
 
+## 1.9.1
+
+### Patch Changes
+
+- Allow realtime ElevenLabs STT audio chunk duration to be configured. - [#2515](https://github.com/livekit/agents-js/pull/2515) ([@rosetta-livekit-bot](https://github.com/apps/rosetta-livekit-bot))
+
+- Updated dependencies [[`b7ad990`](https://github.com/livekit/agents-js/commit/b7ad990c5faa424b31697bd2e868232f81f2bdf5), [`b7ad990`](https://github.com/livekit/agents-js/commit/b7ad990c5faa424b31697bd2e868232f81f2bdf5)]:
+  - @livekit/agents@1.9.1
+
 ## 1.9.0
 
 ### Minor Changes

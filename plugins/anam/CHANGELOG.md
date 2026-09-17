@@ -1,5 +1,12 @@
 # @livekit/agents-plugin-anam
 
+## 1.9.1
+
+### Patch Changes
+
+- Updated dependencies [[`b7ad990`](https://github.com/livekit/agents-js/commit/b7ad990c5faa424b31697bd2e868232f81f2bdf5), [`b7ad990`](https://github.com/livekit/agents-js/commit/b7ad990c5faa424b31697bd2e868232f81f2bdf5)]:
+  - @livekit/agents@1.9.1
+
 ## 1.9.0
 
 ### Patch Changes
